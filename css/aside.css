@@ -1,55 +1,67 @@
 .aside {
-  
-}
-.aside__wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 1.75rem;
+    padding: 2rem 1.75rem;
+    width: var(--sidebar-width);
+    background-color: #ffff;
+}
+
+.aside__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     height: 100%;
-  width: var(--sidebar-width);
-  background-color: #ffff;
+    margin-top: 4rem;
 }
+
 .aside__header {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 .aside__text-wrap {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     gap: 8px;
 }
-.aside__logo {
-}
+
+.aside__logo {}
+
 .aside__title {
     font-size: 1.625rem;
     font-weight: 600;
 }
+
 .aside__version {
     color: #838383;
     font-size: .625rem;
     font-weight: 500;
 }
+
 .aside__body {
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 }
+
 a.main-link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: .875rem;
 }
+
 .aside__link {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .625rem;
+    padding: .5rem;
+    border: 1px solid transparent;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
 }
@@ -59,32 +71,36 @@ a.main-link {
     align-items: center;
     gap: .875rem;
 }
+
 .aside__link:hover {
     color: white;
-    background-color: var( --primary-alt-color);
+    background-color: var(--primary-alt-color);
     border-radius: 8px;
 }
-.aside__arrow {
-}
 
-.aside__footer {
-}
+.aside__arrow {}
+
+.aside__footer {}
+
 .aside__footer-wrap {
     display: flex;
     align-items: center;
     gap: .75rem;
 }
+
 .aside__footer-img {
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
 }
-.aside__footer-info {
-}
+
+.aside__footer-info {}
+
 .aside__footer-title {
     font-weight: 500;
     padding-bottom: 9px;
 }
+
 .aside__footer-position {
     font-size: 12px;
     color: #757575;

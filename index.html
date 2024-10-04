@@ -11,14 +11,14 @@
 <body>
     <div class="wrapper">
         <aside class="aside">
-            <div class="aside__wrap">
-                <div class="aside__header">
-                    <img src="icons/logo.svg" alt="logo-icon" class="aside__logo">
-                    <div class="aside__text-wrap">
-                        <h2 class="aside__title">Dashboard</h2>
-                        <sub class="aside__version">v.01</sub>
-                    </div>
+            <header class="aside__header">
+                <img src="icons/logo.svg" alt="logo-icon" class="aside__logo">
+                <div class="aside__text-wrap">
+                    <h2 class="aside__title">Dashboard</h2>
+                    <sub class="aside__version">v.01</sub>
                 </div>
+            </header>
+            <div class="aside__wrap">
                 <nav class="aside__body">
                     <a href="#" class="aside__link main-link">
                         <svg width="24" height="24" fill="none">
@@ -82,7 +82,7 @@
                         </svg>
                     </a>
                 </nav>
-                <div class="aside__footer">
+                <footer class="aside__footer">
                     <div class="aside__footer-wrap">
                         <img src="icons/img/img.png" alt="user-image" class="aside__footer-img">
                         <div class="aside__footer-info">
@@ -90,7 +90,7 @@
                             <div class="aside__footer-position">Project Manager</div>
                         </div>
                     </div>
-                </div>
+                </footer>
             </div>
         </aside>
         <main class="main">
@@ -102,12 +102,12 @@
                             <h2 class="content__header-title">All Customers</h2>
                             <h4 class="content__header-subtitle">Active Members</h4>
                         </div>
-                        <div class="content__header-search">
+                        <label class="content__header-search">
                             <svg width="24" height="24" fill="none">
                                 <use href="icons/sprite24.svg#search"></use>
                             </svg>
                             <input type="text" class="search-input" placeholder="Search">
-                        </div>
+                        </label>
                     </header>
                     <div class="content__table">
                         <table class="table">
