@@ -11,68 +11,202 @@
 <body>
     <div class="wrapper">
         <aside class="aside">
-            <div class="aside__container">
+            <div class="aside__wrap">
                 <div class="aside__header">
                     <img src="icons/logo.svg" alt="logo-icon" class="aside__logo">
-                    <h2 class="aside__title">Dashboard</h2>
-                    <span class="aside__version">v.01</span>
+                    <div class="aside__text-wrap">
+                        <h2 class="aside__title">Dashboard</h2>
+                        <sub class="aside__version">v.01</sub>
+                    </div>
                 </div>
                 <nav class="aside__body">
-                    <a href="" class="aside__link">
-                        <img src="icons/dashboard-icon.svg" class="aside__link-icon">
+                    <a href="#" class="aside__link main-link">
+                        <svg width="24" height="24" fill="none">
+                            <use href="icons/sprite24.svg#dashboard" class="aside__icon"></use>
+                        </svg>
                         Dashboard
                     </a>
-                    <ul class="aside__list">
-                        <li class="aside__item">
-                            <a href="" class="aside__link">
-                                <img src="icons/product-icon.svg" class="aside__link-icon">
-                                Product
-                            </a>
-                            <img src="icons/arrow-right.svg" alt="" class="aside__arrow">
-                        </li>
-                        <li class="aside__item">
-                            <a href="" class="aside__link">
-                                <img src="icons/custom-icon.svg" class="aside__link-icon">
-                                Customers
-                            </a>
-                            <img src="icons/arrow-right.svg" alt="" class="aside__arrow">
-                        </li>
-                        <li class="aside__item">
-                            <a href="" class="aside__link">
-                                <img src="icons/promoute-icon.svg" class="aside__link-icon">
-                                Promote
-                            </a>
-                            <img src="icons/arrow-right.svg" alt="" class="aside__arrow">
-                        </li>
-                        <li class="aside__item">
-                            <a href="" class="aside__link">
-                                <img src="icons/income-icon.svg" class="aside__link-icon">
-                                Income
-                            </a>
-                            <img src="icons/arrow-right.svg" alt="" class="aside__arrow">
-                        </li>
-                        <li class="aside__item">
-                            <a href="" class="aside__link">
-                                <img src="icons/help-icon.svg" class="aside__link-icon">
-                                Help
-                            </a>
-                            <img src="icons/arrow-right.svg" alt="" class="aside__arrow">
-                        </li>
-                    </ul>
+                    <a href="#" class="aside__link">
+                        <span class="aside__item">
+                            <svg width="24" height="24">
+                                <use href="icons/sprite24.svg#product" class="aside__icon"></use>
+                            </svg>
+                            Product
+                        </span>
+                        <svg width="16" height="16" fill="none">
+                            <use href="icons/sprite24.svg#arrow"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="aside__link">
+                        <span class="aside__item">
+                            <svg width="24" height="24" fill="none">
+                                <use href="icons/sprite24.svg#customers" class="aside__icon"></use>
+                            </svg>
+                            Customers
+                        </span>
+                        <svg width="16" height="16" fill="none">
+                            <use href="icons/sprite24.svg#arrow"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="aside__link">
+                        <span class="aside__item">
+                            <svg width="24" height="24" fill="none">
+                                <use href="icons/sprite24.svg#income" class="aside__icon"></use>
+                            </svg>
+                            Income
+                        </span>
+                        <svg width="16" height="16" fill="none">
+                            <use href="icons/sprite24.svg#arrow"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="aside__link">
+                        <span class="aside__item">
+                            <svg width="24" height="24">
+                                <use href="icons/sprite24.svg#promote"></use>
+                            </svg>
+                            Promote
+                        </span>
+                        <svg width="16" height="16" fill="none">
+                            <use href="icons/sprite24.svg#arrow"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="aside__link">
+                        <span class="aside__item">
+                            <svg width="24" height="24" fill="none">
+                                <use href="icons/sprite24.svg#help" class="aside__icon"></use>
+                            </svg>
+                            Help
+                        </span>
+                        <svg width="16" height="16" fill="none">
+                            <use href="icons/sprite24.svg#arrow"></use>
+                        </svg>
+                    </a>
                 </nav>
-                <div class="aside__footer acount">
-                    <div class="acount__wrap">
-                        <img src="icons/img/img.png" alt="user-image" class="acount__img">
-                        <div class="acount__info">
-                            <div class="acount__info-title">Evano</div>
-                            <div class="acount__info-position">Project Manager</div>
+                <div class="aside__footer">
+                    <div class="aside__footer-wrap">
+                        <img src="icons/img/img.png" alt="user-image" class="aside__footer-img">
+                        <div class="aside__footer-info">
+                            <div class="aside__footer-title">Evano</div>
+                            <div class="aside__footer-position">Project Manager</div>
                         </div>
                     </div>
                 </div>
             </div>
         </aside>
-        <main class="main__container"></main>
+        <main class="main">
+            <div class="main__wrapper">
+                <h1 class="main__title">Hello, Evano 👋🏼</h1>
+                <section class="main__content content">
+                    <header class="content__header">
+                        <div class="content__header-wrap">
+                            <h2 class="content__header-title">All Customers</h2>
+                            <h4 class="content__header-subtitle">Active Members</h4>
+                        </div>
+                        <div class="content__header-search">
+                            <svg width="24" height="24" fill="none">
+                                <use href="icons/sprite24.svg#search"></use>
+                            </svg>
+                            <input type="text" class="search-input" placeholder="Search">
+                        </div>
+                    </header>
+                    <div class="content__table">
+                        <table class="table">
+                            <thead class="table__header">
+                                <tr class="table__row">
+                                    <td class="table__cell">Customer Name</td>
+                                    <td class="table__cell">Company</td>
+                                    <td class="table__cell">Phone Number</td>
+                                    <td class="table__cell">Email</td>
+                                    <td class="table__cell">Country</td>
+                                    <td class="table__cell">Status</td>
+                                </tr>
+                            </thead>
+                            <tbody class="table__body">
+                                <tr class="table__row">
+                                    <td class="table__cell">Jane Cooper</td>
+                                    <td class="table__cell">Microsoft</td>
+                                    <td class="table__cell">(225) 555-0118</td>
+                                    <td class="table__cell">jane@microsoft.com</td>
+                                    <td class="table__cell">United States</td>
+                                    <td class="table__cell active-status status">Active</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">Floyd Miles</td>
+                                    <td class="table__cell">Yahoo</td>
+                                    <td class="table__cell">(205) 555-0100</td>
+                                    <td class="table__cell">floyd@yahoo.com</td>
+                                    <td class="table__cell">Kiribati</td>
+                                    <td class="table__cell inactive-status status">Inactive</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">Ronald Richards</td>
+                                    <td class="table__cell">Adobe</td>
+                                    <td class="table__cell">(302) 555-0107</td>
+                                    <td class="table__cell">ronald@adobe.com</td>
+                                    <td class="table__cell">Israel</td>
+                                    <td class="table__cell inactive-status status">Inactive</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">Marvin McKinney</td>
+                                    <td class="table__cell">Tesla</td>
+                                    <td class="table__cell">(252) 555-0126</td>
+                                    <td class="table__cell">marvin@tesla.com</td>
+                                    <td class="table__cell">Iran</td>
+                                    <td class="table__cell active-status status">Active</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">Jerome Bell</td>
+                                    <td class="table__cell">Google</td>
+                                    <td class="table__cell">(629) 555-0129</td>
+                                    <td class="table__cell">jerome@google.com</td>
+                                    <td class="table__cell">Réunion</td>
+                                    <td class="table__cell active-status status">Active</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">Kathryn Murphy</td>
+                                    <td class="table__cell">Microsoft</td>
+                                    <td class="table__cell">(406) 555-0120</td>
+                                    <td class="table__cell">kathryn@microsoft.com</td>
+                                    <td class="table__cell">Curaçao</td>
+                                    <td class="table__cell active-status status">Active</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">Jacob Jones</td>
+                                    <td class="table__cell">Yahoo</td>
+                                    <td class="table__cell">(208) 555-0112</td>
+                                    <td class="table__cell">jacob@yahoo.com</td>
+                                    <td class="table__cell">Brazil</td>
+                                    <td class="table__cell active-status status">Active</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">Kristin Watson</td>
+                                    <td class="table__cell">Facebook</td>
+                                    <td class="table__cell">(704) 555-0127</td>
+                                    <td class="table__cell">kristin@facebook.com</td>
+                                    <td class="table__cell">Åland Islands</td>
+                                    <td class="table__cell inactive-status status">Inactive</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <footer class="content__footer">
+                        <div class="content__footer-info">Showing data 1 to 8 of  256K entries</div>
+                        <div class="content__footer-pagination">
+                            <div class="pagination">
+                                <a href="#" class="pagination__button prev-button">❮</a>
+                                <a href="#" class="pagination__button">1</a>
+                                <a href="#" class="pagination__button">2</a>
+                                <a href="#" class="pagination__button">3</a>
+                                <a href="#" class="pagination__button">4</a>
+                                ...
+                                <a href="#" class="pagination__button">40</a>
+                                <a href="#" class="pagination__button next-button">❯</a>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+            </div>
+        </main>
     </div>
 </body>
-
 </html>

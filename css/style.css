@@ -5,7 +5,6 @@
 
 
 :root {
-    --background-color: #D8D8F6;
     --primary-color: #9197B3;
     --primary-alt-color: #5932EA;
     --green-color: #16C098;
@@ -15,17 +14,25 @@
     --text-color: #292D32;
     --text-alt-color: #404B52;
     --grey-color: #B5B7C0;
+    --grey-second-color: #7E7E7E;
     --grey-alt-color: #EEEEEE;
+    --grey-light-color: #E7E7E7;
     --grey-fill-color: #F5F5F5;
     --sidebar-width: 300px;
     
 }
 
-[class*="__container"] {
-    padding: 0 1rem;
-}
-
 body {
-    background: var(--background-color);
+    color: var(--text-color);
+    background: rgba(145,151,179,0.15);
     font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+main {
+    flex: 1 1 0;
 }
