@@ -18,8 +18,9 @@
     --grey-alt-color: #EEEEEE;
     --grey-light-color: #E7E7E7;
     --grey-fill-color: #F5F5F5;
+    --white-color: #fff;
     --sidebar-width: 300px;
-    
+    --sidebar-width-min: 80px;
 }
 
 body {
