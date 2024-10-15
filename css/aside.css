@@ -3,8 +3,9 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 2rem 1.75rem;
+    background-color: var(--white-color);
     width: var(--sidebar-width);
-    background-color: #ffff;
+    z-index: 50;
 }
 
 .aside__wrap {
@@ -19,6 +20,7 @@
 .aside__header {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 8px;
 }
 
@@ -73,12 +75,18 @@ a.main-link {
 }
 
 .aside__link:hover {
-    color: white;
+    color: var(--white-color);
     background-color: var(--primary-alt-color);
     border-radius: 8px;
 }
 
-.aside__arrow {}
+.arrow {
+    transition: all 0.2s ease-in-out;
+}
+
+.aside__link:hover .arrow {
+    transform: translateX(0.25rem);
+}
 
 .aside__footer {}
 
@@ -104,4 +112,72 @@ a.main-link {
 .aside__footer-position {
     font-size: 12px;
     color: #757575;
+}
+
+.menu-toggle-wrap {
+    display: none;
+}
+
+.collapce.aside {
+    width: var(--sidebar-width-min);
+    padding: 2rem 0.5rem;
+}
+
+
+
+.collapce .aside__footer-info,
+.collapce .aside__link,
+.collapce .aside__text-wrap,
+.collapce .aside__logo {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.collapce .aside__link {}
+
+@media (max-width: 1200px) {
+    .aside {
+        padding: 2rem 1rem;
+        width: calc(var(--sidebar-width) - 2rem);
+    }
+
+    .menu-toggle-wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        position: relative;
+        top: 3rem;
+        left: 0rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: 1px solid transparent;
+        background-color: var(--primary-color);
+        border-radius: 8px;
+        padding: 0.25rem;
+        transition: 0.2s ease-in-out;
+    }
+
+    .menu-toggle:hover {
+        background-color: var(--primary-alt-color);
+    }
+
+    .menu-toggle .arrow {
+        top: -2rem;
+        color: var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-5px, -5px) rotate(-180deg);
+    }
+
+    .collapce .menu-toggle .arrow {
+        transform: translate(5px, 5px) rotate(-360deg);
+    }
+
+    .collapce .menu-toggle-wrap {
+        left: -1rem;
+    }
 }
