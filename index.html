@@ -11,13 +11,20 @@
 <body>
     <div class="wrapper">
         <aside class="aside">
-            <header class="aside__header">
+            <header class="aside__header" id="nav-header">
                 <img src="icons/logo.svg" alt="logo-icon" class="aside__logo">
                 <div class="aside__text-wrap">
                     <h2 class="aside__title">Dashboard</h2>
-                    <sub class="aside__version">v.01</sub>
+                    <span class="aside__version">v.01</span>
                 </div>
             </header>
+            <div class="menu-toggle-wrap">
+                <button class="menu-toggle" @click="ToggleMenu" >
+                    <svg width="26" height="26" fill="none" class="arrow">
+                        <use href="icons/sprite24.svg#arrow"></use>
+                    </svg>
+                </button>
+            </div>
             <div class="aside__wrap">
                 <nav class="aside__body">
                     <a href="#" class="aside__link main-link">
@@ -28,23 +35,23 @@
                     </a>
                     <a href="#" class="aside__link">
                         <span class="aside__item">
-                            <svg width="24" height="24">
+                            <svg width="24" height="24" class="aside__icon">
                                 <use href="icons/sprite24.svg#product" class="aside__icon"></use>
                             </svg>
                             Product
                         </span>
-                        <svg width="16" height="16" fill="none">
+                        <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
                         </svg>
                     </a>
                     <a href="#" class="aside__link">
                         <span class="aside__item">
-                            <svg width="24" height="24" fill="none">
+                            <svg width="24" height="24" fill="none" class="aside__icon">
                                 <use href="icons/sprite24.svg#customers" class="aside__icon"></use>
                             </svg>
                             Customers
                         </span>
-                        <svg width="16" height="16" fill="none">
+                        <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
                         </svg>
                     </a>
@@ -55,7 +62,7 @@
                             </svg>
                             Income
                         </span>
-                        <svg width="16" height="16" fill="none">
+                        <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
                         </svg>
                     </a>
@@ -66,7 +73,7 @@
                             </svg>
                             Promote
                         </span>
-                        <svg width="16" height="16" fill="none">
+                        <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
                         </svg>
                     </a>
@@ -77,7 +84,7 @@
                             </svg>
                             Help
                         </span>
-                        <svg width="16" height="16" fill="none">
+                        <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
                         </svg>
                     </a>
@@ -112,7 +119,7 @@
                     <div class="content__table">
                         <table class="table">
                             <thead class="table__header">
-                                <tr class="table__row">
+                                <tr class="table__row header-row">
                                     <td class="table__cell">Customer Name</td>
                                     <td class="table__cell">Company</td>
                                     <td class="table__cell">Phone Number</td>
@@ -208,5 +215,6 @@
             </div>
         </main>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
