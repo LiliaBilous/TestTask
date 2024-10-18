@@ -20,25 +20,39 @@
             </header>
             <div class="menu-toggle-wrap">
                 <button class="menu-toggle" @click="ToggleMenu" >
-                    <svg width="26" height="26" fill="none" class="arrow">
+                    <svg width="26" height="26" fill="none" class="arrow-toggle">
                         <use href="icons/sprite24.svg#arrow"></use>
                     </svg>
                 </button>
             </div>
             <div class="aside__wrap">
                 <nav class="aside__body">
-                    <a href="#" class="aside__link main-link">
-                        <svg width="24" height="24" fill="none">
-                            <use href="icons/sprite24.svg#dashboard" class="aside__icon"></use>
-                        </svg>
-                        Dashboard
+                    <a href="#" class="aside__link">
+                        <span class="aside__item">
+                            <svg width="24" height="24" fill="none" class="aside__link-icon">
+                                <use href="icons/sprite24.svg#dashboard"></use>
+                            </svg>
+                            <span class="aside__link-text">Dashboard</span>
+                        </span>
+                        <span></span>
                     </a>
                     <a href="#" class="aside__link">
                         <span class="aside__item">
-                            <svg width="24" height="24" class="aside__icon">
-                                <use href="icons/sprite24.svg#product" class="aside__icon"></use>
+                            <svg width="24" height="24" class="aside__link-icon">
+                                <use href="icons/sprite24.svg#product"></use>
                             </svg>
-                            Product
+                            <span class="aside__link-text">Product</span>
+                        </span>
+                        <svg width="16" height="16" fill="none" class="arrow">
+                            <use href="icons/sprite24.svg#arrow"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="aside__link active-tab">
+                        <span class="aside__item">
+                            <svg width="24" height="24" fill="none" class="aside__link-icon">
+                                <use href="icons/sprite24.svg#customers"></use>
+                            </svg>
+                            <span class="aside__link-text">Customers</span>
                         </span>
                         <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
@@ -46,10 +60,10 @@
                     </a>
                     <a href="#" class="aside__link">
                         <span class="aside__item">
-                            <svg width="24" height="24" fill="none" class="aside__icon">
-                                <use href="icons/sprite24.svg#customers" class="aside__icon"></use>
+                            <svg width="24" height="24" fill="none" class="aside__link-icon">
+                                <use href="icons/sprite24.svg#income"></use>
                             </svg>
-                            Customers
+                            <span class="aside__link-text">Income</span>
                         </span>
                         <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
@@ -57,21 +71,10 @@
                     </a>
                     <a href="#" class="aside__link">
                         <span class="aside__item">
-                            <svg width="24" height="24" fill="none">
-                                <use href="icons/sprite24.svg#income" class="aside__icon"></use>
-                            </svg>
-                            Income
-                        </span>
-                        <svg width="16" height="16" fill="none" class="arrow">
-                            <use href="icons/sprite24.svg#arrow"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="aside__link">
-                        <span class="aside__item">
-                            <svg width="24" height="24">
+                            <svg width="24" height="24" class="aside__link-icon">
                                 <use href="icons/sprite24.svg#promote"></use>
                             </svg>
-                            Promote
+                            <span class="aside__link-text">Promote</span>
                         </span>
                         <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
@@ -79,10 +82,10 @@
                     </a>
                     <a href="#" class="aside__link">
                         <span class="aside__item">
-                            <svg width="24" height="24" fill="none">
-                                <use href="icons/sprite24.svg#help" class="aside__icon"></use>
+                            <svg width="24" height="24" fill="none" class="aside__link-icon">
+                                <use href="icons/sprite24.svg#help"></use>
                             </svg>
-                            Help
+                            <span class="aside__link-text">Help</span>
                         </span>
                         <svg width="16" height="16" fill="none" class="arrow">
                             <use href="icons/sprite24.svg#arrow"></use>
