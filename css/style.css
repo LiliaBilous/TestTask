@@ -47,45 +47,9 @@ main {
         width: calc(var(--sidebar-width) - 2rem);
     }
 
-    .menu-toggle-wrap {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 1rem;
-        position: relative;
-        top: 3rem;
-        left: 0rem;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .menu-toggle {
-        display: block;
-        border: 1px solid transparent;
-        background-color: var(--primary-color);
-        border-radius: 8px;
-        padding: 0.25rem;
-        transition: 0.2s ease-in-out;
-    }
-
-    .menu-toggle:hover {
-        background-color: var(--primary-alt-color);
-    }
-
-    .menu-toggle .arrow-toggle {
-        top: -2rem;
-        color: var(--white-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translate(-5px, -5px) rotate(-180deg);
-        transition: all 0.2s ease-in-out;
-    }
-
-    .collapce .menu-toggle .arrow-toggle {
-        transform: translate(5px, 5px) rotate(-360deg);
-    }
-
     .main {
         padding: 2rem 1rem;
+        margin-left: calc(var(--sidebar-width) - 2rem);
     }
 
     .main__content {
@@ -114,7 +78,9 @@ main {
         padding: 2rem 0.5rem;
         width: calc(var(--sidebar-width) - 6rem);
     }
-
+    .main {
+        margin-left: calc(var(--sidebar-width) - 6rem);
+    }
     .aside__title {
         font-size: 1rem;
     }
@@ -143,15 +109,26 @@ main {
 
     .table__row {
         grid-template-columns: repeat(auto-fit, minmax(1rem, 4rem));
+        justify-content: center;
     }
 
     .main {
         padding: 2rem 0.5rem;
     }
-
+    .main__content {
+        padding: 1.5rem 0.5rem;
+      }
     .pagination {
         flex-wrap: wrap;
         gap: .25rem;
+    }
+    .content__header-search {
+        padding: .25rem;
+        gap: 0.5rem;
+    }
+
+    .search-input {
+        width: 6rem;
     }
 }
 
@@ -163,13 +140,8 @@ main {
         width: var(--sidebar-width-min);
         padding: 2rem 0.5rem;
     }
-    .content__header-search {
-        padding: .25rem;
-        gap: 0.5rem;
-    }
-
-    .search-input {
-        width: 6rem;
+    .main {
+        margin-left: calc(var(--sidebar-width) - 8rem);;
     }
     .collapce .arrow {
         display: none;

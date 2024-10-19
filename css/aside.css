@@ -4,6 +4,10 @@
     justify-content: space-around;
     padding: 2rem 1.75rem;
     background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
     width: var(--sidebar-width);
     z-index: 50;
 }
@@ -12,7 +16,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
     height: 100%;
     margin-top: 4rem;
 }
@@ -109,9 +112,41 @@
 }
 
 .menu-toggle-wrap {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    position: relative;
+    top: 3rem;
+    left: 0rem;
+    transition: all 0.2s ease-in-out;
 }
 
+.menu-toggle {
+    display: block;
+    border: 1px solid transparent;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 0.25rem;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-toggle:hover {
+    background-color: var(--primary-alt-color);
+}
+
+.menu-toggle .arrow-toggle {
+    top: -2rem;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-5px, -5px) rotate(-180deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.collapce .menu-toggle .arrow-toggle {
+    transform: translate(5px, 5px) rotate(-360deg);
+}
 .collapce.aside {
     width: calc(var(--sidebar-width-min) + 1rem);
     padding: 2rem 0.5rem;

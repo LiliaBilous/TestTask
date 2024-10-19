@@ -1,8 +1,14 @@
 .main{
+    margin-left: var(--sidebar-width);
+    overflow-y: auto;
+    height: 100vh;
     width: calc(100% - var(--sidebar-width));
     position: relative;
     flex-grow: 1;
     padding: 2rem 3rem;
+}
+.collapce.main{
+    margin-left: calc(var(--sidebar-width-min) + 1rem);
 }
 .main__wrapper {
     display: flex;
