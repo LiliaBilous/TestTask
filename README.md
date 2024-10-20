@@ -19,16 +19,18 @@
 - JavaScript to add dynamic behavior and animations(GSAP)
 
 # ⏳ Time Spent
-It took approximately [16 hours] to complete this task.
+It took approximately 16 hours to complete this task.
 
 # 📂 Project Structure
-`
+
+```
 ├── assets/             # Images, icons, etc.
 ├── css/                # CSS files
 ├── js/                 # JavaScript for interactivity
 ├── index.html          # Main HTML file
 ├── README.md           # Project documentation
-`
+
+```
 
 # 📦 Deployment
 The project is deployed on GitHub Pages. You can view it at the following link:
